@@ -18,10 +18,18 @@ require 'rails_helper'
 
 RSpec.describe 'Welcome Page', type: :feature do
   describe '/' do
-    it 'search form' do
+    it 'search form exits' do
       visit root_path
 
-      expect(page).to have_field("Search")
+      expect(page).to have_field :q
+    end
+
+    it 'can search for food' do
+      visit root_path
+
+      fill_in :q, with: "sweet potatoes"
+
+      click_on("Search")
     end
   end
 end
