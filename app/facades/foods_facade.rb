@@ -10,6 +10,7 @@ class FoodsFacade
   end
 
   def get_total_hits(food)
+
     service = UsdaService.new.get_all_items(food)
     
     FoodCount.new(service)

@@ -1,1 +1,13 @@
 <h1> <%= @result.total_hits %> results found</h1>
+
+<section id="results">
+  <h3>List of Ten Results</h3>
+  <% @foods.each do |f| %>
+    <li class ="foods-list">
+      <ul> GTIN/UPC Code: <%= f.upc_code %>  </ul>
+      <ul> Description: <%= f.description %>  </ul>
+      <ul> Brand Owner: <%= f.brand_owner %>  </ul>
+      <ul> Ingredients: <%= f.ingredients %>  </ul>
+    </li>
+  <% end %>  
+</section>
