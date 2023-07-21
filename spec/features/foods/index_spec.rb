@@ -11,7 +11,7 @@ RSpec.describe 'Foods Index Page' do
 
       expect(current_path).to eq(foods_path)
 
-      expect(page).to have_content("30,000 resutls found")
+      expect(page).to have_content("55579 results found")
     end
 
     it 'displays list of ten foods that contain the ingredient' do
@@ -19,7 +19,7 @@ RSpec.describe 'Foods Index Page' do
     end
 
     it 'displays foods attributes' do
-      
+
     end
   end
 end

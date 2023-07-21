@@ -8,6 +8,5 @@ class Food
     @description = data[:description]
     @brand_owner = data[:brandOwner]
     @ingredients = data[:ingredients]
-    require 'pry'; binding.pry
   end
 end

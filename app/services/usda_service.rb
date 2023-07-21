@@ -1,6 +1,6 @@
 class UsdaService
   def get_all_items(food)
-    get_url("/fdc/v1/foods/search?query=#{food}")
+    get_url("/fdc/v1/foods/search?query=#{food}&pageSize=10")
   end
 
   def get_url(url)
